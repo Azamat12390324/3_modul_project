@@ -170,9 +170,9 @@
                                                     <li class="mega-menu-item">
                                                         <a href="#" class="mega-menu-item-title">{% translate " Product Types" %}</a>
                                                         <ul class="mega-menu-sub">
-                                                            <li><a href="product-details-tab-left.html">{% translate "Product Tab Left" %}</a></li>
-                                                            <li><a href="product-details-gallery-left.html">{% translate "Product Gallery Left" %}</a></li>
-                                                            <li><a href="product-details-sticky-left.html">{% translate "Product Sticky Left" %}</a></li>
+                                                            <li><a href="{% url 'prod_types2:tab_left' %}">{% translate "Product Tab Left" %}</a></li>
+                                                            <li><a href="{% url 'prod_types2:gallery_left' %}">{% translate "Product Gallery Left" %}</a></li>
+                                                            <li><a href="{% url 'prod_types2:sticky_left' %}">{% translate "Product Sticky Left" %}</a></li>
                                                         </ul>
                                                     </li>
                                                 </ul>
@@ -187,28 +187,28 @@
                                             <a href="blog-single-sidebar-left.html">{% translate "Blog" %} <i class="fa fa-angle-down"></i></a>
                                             <!-- Sub Menu -->
                                             <ul class="sub-menu">
-                                                <li><a href="blog-grid-sidebar-left.html">{% translate "Blog Grid Sidebar left" %}</a></li>
-                                                <li><a href="blog-full-width.html">{% translate "Blog Full Width" %}</a></li>
-                                                <li><a href="blog-single-sidebar-left.html">{% translate "Blog Single Sidebar left" %}</a></li>
+                                                <li><a href="{% url 'blog:grid_sidebar' %}">{% translate "Blog Grid Sidebar left" %}</a></li>
+                                                <li><a href="{% url 'blog:full_width' %}">{% translate "Blog Full Width" %}</a></li>
+                                                <li><a href="{% url 'blog:single_sidebar' %}">{% translate "Blog Single Sidebar left" %}</a></li>
                                             </ul>
                                         </li>
                                         <li class="has-dropdown">
                                             <a href="#">{% translate "Pages" %} <i class="fa fa-angle-down"></i></a>
                                             <!-- Sub Menu -->
                                             <ul class="sub-menu">
-                                                <li><a href="service.html">{% translate "Service" %}</a></li>
-                                                <li><a href="faq.html">{% translate "Frequently Questions" %}</a></li>
-                                                <li><a href="privacy-policy.html">{% translate "Privacy Policy" %}</a></li>
-                                                <li><a href="404.html">{% translate "404 Page" %}</a></li>
+                                                <li><a href="{% url 'pages:servise' %}">{% translate "Service" %}</a></li>
+                                                <li><a href="{% url 'pages:frequently' %}">{% translate "Frequently Questions" %}</a></li>
+                                                <li><a href="{% url 'pages:privacy_policy' %}">{% translate "Privacy Policy" %}</a></li>
+                                                <li><a href="{% url 'pages:page_404' %}">{% translate "404 Page" %}</a></li>
                                             </ul>
                                         </li>
                                         <li>
-                                            <a href="about-us.html">{% translate "About Us" %}</a>
+                                            <a href="{% url 'about:about_us' %}">{% translate "About Us" %}</a>
                                         </li>
     
 
                                         <li>
-                                            <a href="contact-us.html">{% translate "Contact Us" %}</a>
+                                            <a href="{% url 'contact:contact_us' %}">{% translate "Contact Us" %}</a>
                                     
                                 </nav>
                             </div> <!-- Header Main Menu Start -->
@@ -281,7 +281,7 @@
                             <a class="mobile-user-menu-link" href="">{% translate "English" %}</a>
                             <!-- Header Top Menu's Dropdown -->
                             <ul class="mobile-user-sub-menu">
-                                <li><a href=""><img class="user-sub-menu-link-icon" src="{% static 'assets/images/icon/lang-en.png'%}" alt=""> English</a></li>
+                                <li><a href="http://127.0.0.1:8000/en/home_1/"><img class="user-sub-menu-link-icon" src="{% static 'assets/images/icon/lang-en.png'%}" alt=""> English</a></li>
                                 <li><a href="http://127.0.0.1:8000/ru/home_1/"><img class="user-sub-menu-link-icon" src='' alt="">{% translate 'Russian' %}</a></li>
                             </ul>
                         </li>

@@ -9,16 +9,23 @@ from django.conf.urls.i18n  import i18n_patterns
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('home_1.urls', namespace='default_1')),
-    path('', include('home_2.urls')),
+    path('', include('home_2.urls', namespace='default_2')),
     path('',include('shop_layouts.urls')),
     path('',include('other_pages.urls')),
     path('',include('product_types.urls')), 
+    path('',include('prod_types2.urls')),
+    path('',include('blog.urls')),
+    path('',include('pages.urls')),
+    path('',include('about.urls')),
+    path('',include('contact.urls'))
 ]
 
 urlpatterns += i18n_patterns(
     path('', include('home_1.urls')),
+    path('',include('home_2.urls')),
 ) 
     
+
 
 
 

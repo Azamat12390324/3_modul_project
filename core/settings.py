@@ -30,6 +30,11 @@ CUSTOM_APPS = [
     'shop_layouts',
     'other_pages',
     'product_types',
+    'prod_types2',
+    'blog',
+    'pages',
+    'about',
+    'contact'
     
     
 ]
